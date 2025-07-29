@@ -17,12 +17,17 @@ body {
 
 .navbar-brand, .navbar-brand:focus {
     font-family: 'M Plus 1 Code', sans-serif;
-    color: var(--fa-primary-color);
+    color: white;
     font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 5px 5px 15px var(--fa-primary-color), -5px -5px 15px var(--fa-primary-color);
+    transition: text-shadow, color 1s;
 }
 
-.navbar-brand:hover, .fa-bars:hover {
-    color: var(--fa-secondary-color);
+.navbar-brand:hover {
+    color: var(--fa-primary-color);
+    text-shadow: 5px 5px 15px black, -5px -5px 15px black;
+    /* color: var(--fa-secondary-color); */
 }
 
 .navbar-toggler {
@@ -30,16 +35,23 @@ body {
     border-color: var(--fa-primary-color);
 }
 
+.fa-xmark {
+    font-size: 2rem;
+}
+.fa-bars {
+    font-size: 1.5rem;
+}
 
 .fa-xmark, .fa-bars {
-    font-size: 1.5rem;
     color: var(--fa-primary-color);
+    transition: all 1s;
 }
-.navbar-toggler:hover, .fa-xmark:hover {
-    border-color: var(--fa-secondary-color);
-    color: var(--fa-secondary-color);
+.navbar-toggler:hover, .fa-xmark:hover , .fa-bars:hover{
+
+    /* border-color: var(--fa-secondary-color); */
+    border-color: white;
+    color: white;
+    /* color: var(--fa-secondary-color); */
+    text-shadow: 5px 5px 15px var(--fa-primary-color), -5px -5px 15px var(--fa-primary-color);
 }
 
-.fa-bars < .navbar-toggle:hover {
-    color: var(--fa-secondary-color);
-}
