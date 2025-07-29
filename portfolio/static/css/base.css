@@ -1,0 +1,45 @@
+/* * {color: red;} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+:root {
+    --fa-primary-color: rgb(175, 122, 213);
+    --fa-secondary-color: rgb(0,200,0);
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+    --bs-dark-rgb: 50, 45, 55;
+}
+
+body {
+    background-color: rgb(195, 205, 195);
+}
+
+.navbar-brand, .navbar-brand:focus {
+    font-family: 'M Plus 1 Code', sans-serif;
+    color: var(--fa-primary-color);
+    font-size: 2rem;
+}
+
+.navbar-brand:hover, .fa-bars:hover {
+    color: var(--fa-secondary-color);
+}
+
+.navbar-toggler {
+    border-width: 3px;
+    border-color: var(--fa-primary-color);
+}
+
+
+.fa-xmark, .fa-bars {
+    font-size: 1.5rem;
+    color: var(--fa-primary-color);
+}
+.navbar-toggler:hover, .fa-xmark:hover {
+    border-color: var(--fa-secondary-color);
+    color: var(--fa-secondary-color);
+}
+
+.fa-bars < .navbar-toggle:hover {
+    color: var(--fa-secondary-color);
+}
