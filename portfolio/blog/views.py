@@ -1,5 +1,14 @@
 from django.shortcuts import render
+from .models import Article
 
 
 def blog(request):
-    return render(request, 'blog/index.html')
+
+    
+    articles = Article.objects.all()
+
+    context = {
+        "articles": articles
+    }
+
+    return render(request, 'blog/index.html', context)
