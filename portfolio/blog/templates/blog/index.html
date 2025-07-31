@@ -9,10 +9,27 @@
 
 <div class="container-fluid mt-5 ">
 
-    Blog page
+    <div class="row">
+        <div class="col-8 offset-2 text-center">Blog page introduction text</div>
+    </div>
 
     {% for article in articles %}
-        <div class="card" style="width: 18rem;">
+
+        
+        <div class="card rounded" style="width: 18rem;">
+            <a href="#">
+                <img src="{% static 'images/pexels-pixabay-356056.jpg' %}" class="card-img-top rounded" alt="...">
+                <div class="card-img-overlay">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        <p class="card-text rounded p-1 h-75">{{article.excerpt}}</p>
+                </div>
+                </div>                
+            </a>
+        </div>
+
+
+        <!-- <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">{{article.id}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{article.title}}</h6>
@@ -21,21 +38,7 @@
                 <a href="#" class="card-link">Another link</a>
             </div>
         </div>
-        
-        <div class="card" style="width: 18rem;">
-            <img src="{% static 'images/pexels-pixabay-356056.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-                <p class="card-title">Some text, yeye</p>
-
-            </div>
-            
-
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+         -->
         
     {% empty %}
     No articles found
