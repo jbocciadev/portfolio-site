@@ -1,30 +1,30 @@
-{% extends "base.html" %}
-{% load static %}
-
-    {% block extra_title %}
-        Home
-    {% endblock %}
-
-    {% block content %}
-    
-    <div class="row mt-5">
-        <div class="col-2">
-            <img class="img-thumbnail" src="{% static '/images/Patrick star.png' %}" alt="">
-        </div>
-        <div class="col-10 pt-3">
-            <p>
-                Hi There!<br>
-                    I'm Juan, and this is my portfolio website. <br>
-                    I am an aspiring software developer with some experience in Web development with Django. 
-                    I have spent the past few years working in the telecommunications industry in a technical capacity where I have 
-                    developed an interest in technology, software and coding in particular. <br>
-                    I have set up this website as a challenge for myself to get some coding mileage in over the summer while I wait
-                    for September to come around an I can resume my formal training in the National College of Ireland. The aim is to 
-                    give all visitors a brief introduction of myself and have a blog to present my various projects. <br>
-                    I hope you like it! 
-            </p>
-        </div>
+{% extends "base.html" %} {% load static %}
+{% block extra_title %}Home{% endblock %}
+{% block content %}
+  <div class="row mt-5">
+    <div class="col-2">
+      <img
+        class="img-thumbnail"
+        src="{% static '/images/Patrick star.png' %}"
+        alt=""
+      />
     </div>
-
-
-    {% endblock %}
+    <div class="col-10 pt-3">
+      <p>
+        Hi There!<br />
+        I'm Juan, and this is my portfolio website. <br />
+        I am an aspiring software developer with some experience in Web
+        development with Django. I have spent the past few years working in the
+        telecommunications industry in a technical capacity where I have
+        developed an interest in technology, software and coding in particular.
+        <br />
+        I have set up this website as a challenge for myself to get some coding
+        mileage in over the summer while I wait for September to come around an
+        I can resume my formal training in the National College of Ireland. The
+        aim is to give all visitors a brief introduction of myself and have a
+        blog to present my various projects. <br />
+        I hope you like it!
+      </p>
+    </div>
+  </div>
+{% endblock %}

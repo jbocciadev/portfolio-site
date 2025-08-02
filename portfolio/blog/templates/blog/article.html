@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}
+  Blog
+{% endblock %}
+
+{% block content %}
+  settings: <br />
+  {{ settings }}
+  {{ article.title }}
+  {{ article.excerpt }}
+  {{ article.content | safe }}
+{% endblock %}

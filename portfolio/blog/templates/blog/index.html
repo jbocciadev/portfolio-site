@@ -2,49 +2,48 @@
 {% load static %}
 
 {% block extra_title %}
-    Blog
+  Blog
 {% endblock %}
 
 {% block content %}
-
-<div class="container-fluid mt-5 ">
-
+  <div class="container-fluid mt-5 ">
     <div class="row">
-        <div class="col-8 offset-2 text-center">Blog page introduction text</div>
+      <div class="col-8 offset-2 text-center">Blog page introduction text</div>
     </div>
 
-    {% for article in articles %}
-
-        
+    <div
+      class="col-10 offset-1 mt-5 d-flex flex-wrap justify-content-around space-around"
+    >
+      {% for article in articles %}
         <div class="card rounded" style="width: 18rem;">
-            <a href="#">
-                <img src="{% static 'images/pexels-pixabay-356056.jpg' %}" class="card-img-top rounded" alt="...">
-                <div class="card-img-overlay">
-                    <div class="card-body h-100">
-                        <h5 class="card-title">{{article.title}}</h5>
-                        <p class="card-text rounded p-1 h-75">{{article.excerpt}}</p>
-                </div>
-                </div>                
-            </a>
+          <a href="{% url 'blog' %}{{ article.id }}">
+            <img
+              src="{% static 'images/pexels-pixabay-356056.jpg' %}"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <div class="card-body h-100">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text rounded p-1 h-75">{{ article.excerpt }}</p>
+              </div>
+            </div>
+          </a>
         </div>
-
 
         <!-- <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">{{article.id}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{article.title}}</h6>
-                <p class="card-text">{{article.content}}</p>
+                <h5 class="card-title">{{ article.id }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ article.title }}</h6>
+                <p class="card-text">{{ article.content }}</p>
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
             </div>
         </div>
          -->
-        
-    {% empty %}
-    No articles found
 
-    {% endfor %}
-
-
-</div>
+        {% empty %} No articles found
+      {% endfor %}
+    </div>
+  </div>
 {% endblock %}
