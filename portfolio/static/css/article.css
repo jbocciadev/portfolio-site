@@ -1,0 +1,13 @@
+@import './base.css';
+
+.articleTitle {
+    border-bottom: solid 2px grey;
+}
+.image-style-align-left {
+    float: left;
+}
+
+.articleExcerpt {
+    color: rgba(var(--bs-dark-rgb),0.7);
+    /* color: red; */
+}
