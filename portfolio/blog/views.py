@@ -14,10 +14,10 @@ def show(request, id):
     article = get_object_or_404(Article, pk=id)
 
     from django.conf import settings
-    settings = settings.MEDIA_URL
+    # settings = settings.MEDIA_URL
 
     context = {
         "article" : article,
-        "settings" : settings
+        # "settings" : settings
     }
     return render(request, 'blog/article.html', context)

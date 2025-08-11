@@ -7,7 +7,8 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% endblock %}
-    {% block extra_meta %}{% endblock %}
+    {% block extra_meta %}
+    {% endblock %}
     {% block core_css %}
       <link
         rel="stylesheet"
@@ -17,7 +18,8 @@
       />
       <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     {% endblock %}
-    {% block extra_css %}{% endblock %}
+    {% block extra_css %}
+    {% endblock %}
     {% block core_js %}
       <script
         src="https://kit.fontawesome.com/7c24784c1c.js"
@@ -110,7 +112,7 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex mt-3" role="search">
+                <!-- <form class="d-flex mt-3" role="search">
                   <input
                     class="form-control me-2"
                     type="search"
@@ -118,7 +120,7 @@
                     aria-label="Search"
                   />
                   <button class="btn btn-success" type="submit">Search</button>
-                </form>
+                </form> -->
               </div>
             </div>
           </div>

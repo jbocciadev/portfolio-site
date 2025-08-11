@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('blog/', include('blog.urls')),
-    path('summernote/', include('django_summernote.urls')),
+    # path('summernote/', include('django_summernote.urls')),
 ]
 
 # from https://medium.com/django-unleashed/working-and-configuring-media-files-in-django-0c2fa7b97a1e

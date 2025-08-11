@@ -6,9 +6,7 @@
 {% endblock %}
 
 {% block content %}
-  settings: <br />
-  {{ settings }}
-  {{ article.title }}
-  {{ article.excerpt }}
-  {{ article.content | safe }}
+  <h1>{{ article.title }}</h1>
+  <h3>{{ article.excerpt }}</h3>
+  <p>{{ article.content }}</p>
 {% endblock %}
