@@ -5,6 +5,7 @@
 }
 .image-style-align-left {
     float: left;
+    margin-right: 1vw;
 }
 
 .articleExcerpt {
