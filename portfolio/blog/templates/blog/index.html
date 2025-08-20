@@ -17,11 +17,21 @@
       {% for article in articles %}
         <div class="card rounded" style="width: 18rem;">
           <a href="{% url 'blog' %}{{ article.id }}">
+            
+            {% if article.articleImage %}
+            <img
+              src="{{ MEDIA_URL }}{{ article.articleImage }}"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            {% else %}
             <img
               src="{% static 'images/pexels-pixabay-356056.jpg' %}"
               class="card-img-top rounded"
               alt="..."
             />
+            {% endif %}
+            
             <div class="card-img-overlay">
               <div class="card-body h-100">
                 <h5 class="card-title">{{ article.title }}</h5>
