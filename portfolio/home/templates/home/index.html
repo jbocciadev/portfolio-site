@@ -1,21 +1,22 @@
 {% extends "base.html" %} {% load static %}
 {% block extra_title %}Home{% endblock %}
 {% block content %}
-  <div class="row home-header py-2">
-    <div class="col-4 col-md-2">
-      <img
-        class="img-thumbnail"
-        src="{% static '/images/Patrick star.png' %}"
-        alt=""
-      />
+  <div class="row home-header py-2">    
+    <div class="col-8 offset-2 pt-3 home-text">
+      <div class="float-start mw-25 ">
+        <img
+          style="max-height: 180px;"
+          class="img-thumbnail me-3"
+          src="{% static '/images/Patrick star.png' %}"
+          alt=""
+        />
     </div>
-    <div class="col-8 pt-3 home-text">
       <p>I'm <b>Juan</b>, a software developer with a background in telecommunications 
         and a future focused on building versatile tech solutions. 
         My experience in telecommunications sparked my interest in software and coding,
          and I've since dedicated myself to this new path. <br></p>
 
-      <p>To build a well-rounded skill set, I'm currently creating a variety of personal
+      <p>In order to build a well-rounded skill set, I'm currently creating a variety of personal
          projects that allow me to explore different technologies and disciplines. While
           my passion lies in <b>backend development</b> and working with <b>databases</b>, I am actively
            working on building a comprehensive <b>Full-Stack</b> skill set. This website serves as
