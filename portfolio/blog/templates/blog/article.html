@@ -17,13 +17,11 @@
         <div class="row article-header-container">
           <h1 class="articleTitle">{{ article.title }}</h1>
           <h3 class="articleExcerpt">{{ article.excerpt }}</h3>
-          <img class="article-header-img p-0 rounded-4" src="{{ MEDIA_URL }}{{ article.articleImage }}" alt="">
+          <img class="article-header-img p-0 rounded-4 object-fit-cover" style="max-height: 150px;" src="{{ MEDIA_URL }}{{ article.articleImage }}" alt="">
         </div>
         <div class="article-body-container">
           <p>{{ article.content | safe }}</p>
         </div>
       </div>
-    
-    
   </div>
 {% endblock %}
